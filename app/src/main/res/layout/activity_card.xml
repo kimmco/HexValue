@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".CardActivity">
+
+        <com.google.developer.colorvalue.ui.ColorView
+            android:id="@+id/details_color_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/card_layout_height"
+            app:show_text="false" />
+
+        <TextView
+            android:id="@+id/details_color_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/color_name_margin_top"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textSize="@dimen/color_name_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/details_color_view"
+            tools:text="@string/text_name" />
+
+        <TextView
+            android:id="@+id/details_hex_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@+id/details_color_name"
+            app:layout_constraintStart_toStartOf="@+id/details_color_name"
+            app:layout_constraintTop_toBottomOf="@+id/details_color_name"
+            tools:text="@string/text_name_value" />
+
+    </android.support.constraint.ConstraintLayout>
+
